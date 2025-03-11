@@ -1,0 +1,55 @@
+{
+    "name": "雾雨魔理沙",
+    "id": "marisa",
+    "attributes": {
+        "health": 20,
+        "attack": 2,
+        "mana_max": 10
+    },
+    "skills": [
+        {
+            "name": "Stardust Missile",
+            "type": "attack",
+            "cost": "n",
+            "effect": "对指定目标格造成n点伤害，非弹道攻击，不受障碍物影响",
+            "usage": "点按1技能，输入n，点按目标格",
+            "announcements": {
+                "default": "魔理沙向{position}发射了一枚导弹",
+                "nearby": "魔理沙向{position}发射了一枚导弹，敌方在此周围",
+                "hit": "魔理沙向{position}发射了一枚导弹，击中{enemy}"
+            }
+        },
+        {
+            "name": "Non-Directional Laser",
+            "type": "consume",
+            "cost": 2,
+            "effect": "选定一行或一列，对该排所有实体造成1点伤害",
+            "usage": "点按2技能，输入1代表横向2代表纵向，生成瞄准线，点按格子释放",
+            "announcements": {
+                "default": "魔理沙对{line}释放了激光",
+                "nearby": "魔理沙对{line}释放了激光，敌方在此周围",
+                "hit": "魔理沙对{line}释放了激光，击中{enemy}"
+            }
+        },
+        {
+            "name": "Event Horizon",
+            "type": "utility",
+            "cost": "n",
+            "effect": "你的技能额外获取半径2的额外视野，持续n回合",
+            "usage": "点按3技能，输入n，生效",
+            "announcements": {
+                "default": "魔理沙的技能额外获取半径2的视野，现已持续{turns}回合"
+            }
+        },
+        {
+            "name": "Master Spark",
+            "type": "special",
+            "cost": 10,
+            "effect": "从自机位置发射3格宽、无限长度的贯穿光束，持续2回合，每回合对命中单位造成最大生命值50%的伤害，期间无法移动",
+            "usage": "点按4技能，生成射线，选择坐标后发射两回合的魔炮",
+            "announcements": {
+                "default": "魔理沙对{position}使用了「Master Spark」，被击中两回合者即死。还剩{turns}回合"
+            }
+        }
+    ]
+}

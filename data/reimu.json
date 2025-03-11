@@ -1,0 +1,55 @@
+{
+    "name": "博丽灵梦",
+    "id": "reimu",
+    "attributes": {
+        "health": 20,
+        "attack": 1,
+        "mana_max": 25
+    },
+    "skills": [
+        {
+            "name": "Persuasion Needle",
+            "type": "attack",
+            "cost": "n",
+            "effect": "发射封魔针，造成n点伤害，弹道攻击，可被墙体阻挡",
+            "usage": "点按1技能，输入n，生成射线瞄准线，按射线角度射击，击中第一个实体造成n点伤害",
+            "announcements": {
+                "default": "灵梦向{position}发射了封魔针",
+                "nearby": "灵梦向{position}发射了封魔针，敌方在此周围",
+                "hit": "灵梦向{position}发射了封魔针，击中{enemy}"
+            }
+        },
+        {
+            "name": "Homing Amulet",
+            "type": "consume",
+            "cost": 1,
+            "effect": "发射符札，对路径上所有单位造成1点伤害，若命中敌方机体，返还1点灵力",
+            "usage": "点按2技能，生成射线瞄准线，按射线角度射击，所有遇到的实体受伤",
+            "announcements": {
+                "default": "灵梦向{position}发射了符札",
+                "nearby": "灵梦向{position}发射了一枚符札，敌方在此周围",
+                "hit": "灵梦向{position}发射了一枚符札，击中{enemy}"
+            }
+        },
+        {
+            "name": "阴阳宝玉",
+            "type": "utility",
+            "cost": "n",
+            "effect": "获得以自身为中心、半径n格的视野，持续n回合",
+            "usage": "点按3技能，输入n，生效",
+            "announcements": {
+                "default": "灵梦获取了额外视野"
+            }
+        },
+        {
+            "name": "G Free",
+            "type": "special",
+            "cost": "n",
+            "effect": "瞬间移动至n格范围内的任意位置",
+            "usage": "点按4技能，输入n，选择坐标格",
+            "announcements": {
+                "default": "灵梦使用了瞬间移动"
+            }
+        }
+    ]
+}

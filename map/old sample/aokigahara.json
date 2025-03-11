@@ -1,0 +1,52 @@
+{
+    "name": "青木原",
+    "size": [
+        12,
+        9
+    ],
+    "spawn_points": {
+        "blue": [
+            1,
+            4
+        ],
+        "red": [
+            10,
+            4
+        ]
+    },
+    "terrain": {
+        "grass": {
+            "positions": [
+                [2, 0], [3, 0], [4, 0], [2, 1], [3, 1], [4, 1],
+                [7, 0], [8, 0], [9, 0], [7, 1], [8, 1], [9, 1],
+                [4, 7], [5, 7], [6, 7], [7, 7], [4, 8], [5, 8], [6, 8], [7, 8]
+            ],
+            "properties": [
+                "无法侦察"
+            ]
+        },
+        "walls": {
+            "positions": [
+                [3, 3], [3, 4], [3, 5], [3, 6], [3, 7], [3, 8],
+                [8, 3], [8, 4], [8, 5], [8, 6], [8, 7], [8, 8]
+            ],
+            "health": 5,
+            "properties": [
+                "无法跨越"
+            ]
+        }
+    },
+    "resources": {
+        "ground_img": "ground.png",
+        "grass_img": "grass.png",
+        "wall_imgs": {
+            "1": "wall 1h.png",
+            "2": "wall 2h.png",
+            "3": "wall 3h.png",
+            "4": "wall 4h.png",
+            "5": "wall 5h.png"
+        },
+        "wall_default": "wall 5h.png",
+        "start_img": "start.png"
+    }
+}
